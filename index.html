@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-logo">
+            <img src="./assets/revou-logo.png" alt="revou-logo"/>
+        </div>
+        <nav class="nav">
+            <a class="nav-item">Home</a>
+            <a class="nav-item">Our Profile</a>
+            <a class="nav-item">Portofolio</a>
+            <a href="#message-us" class="nav-item">Message Us</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="greetings">
+            <h1>Hi. my name is Syaman</h1>
+            <p>Ini adalah latihan website pertama</p>
+        </div>
+    </section>
+
+    <section class="headquarters">
+        <h2 id="our-profile">Our Headquarters</h2>
+        <div class="hq-items">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </section>
+
+    <section id="message-us" class="form">
+        <h2>Message Us</h2>
+            <form name="message-form" onsubmit="return validateform()">
+                Nama: 
+                <input placeholder="Nama" type="text" name="full-name"/>
+                <br>
+                
+                Tanggal Lahir:
+                <input type="date" name="birth-date"/>
+                <br>
+
+                Jenis Kelamin:
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Laki-laki</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Perempuan</label>
+                <br>
+
+                Pesan:
+                <textarea placeholder="pesan" name="messages"></textarea>
+                <br>
+
+                <input type="submit" value="Submit" target>
+
+                <div>
+                    <p>Nama: <span id="sender-full-name"></span></p>
+                    <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                    <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                    <p>Pesan: <span id="sender-messages"></span></p>
+                </div>
+
+            </form>
+
+            
+        </section>
+
+    <footer class="footer">
+        <p class="footer-text">Dibuat oleh Syaman &copy 2023</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
